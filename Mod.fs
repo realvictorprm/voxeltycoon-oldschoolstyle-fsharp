@@ -61,10 +61,6 @@ type TheMod() =
 
     override _.OnGameStarting() =
         OldSchoolStyleManager.Initialize()
-
-        let curve = VoxelTycoon.R.Curves.Rails.TurnLeft
-        curve.Points.[0] <- Vector3.zero
-        curve.Points.[1] <- Vector3.one
         ()
     override _.OnGameStarted() =
         Toolbar.Current.AddButton(FontIcon.Ketizoloto(I.Settings1), "Old school style settings", ToolToolbarAction(fun () -> OldSchoolStyleModSettingsTool() :> _));
