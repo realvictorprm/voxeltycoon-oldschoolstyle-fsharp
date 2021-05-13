@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <Content Include="mod.json" />
-    <Compile Include="Library.fs" />
+    <Compile Include="Mod.fs" />
   </ItemGroup>
   
   <ItemGroup>
